@@ -55,7 +55,7 @@ const Video = () =>  {
     if (folderId) {
       function start() {
         gapi.client.init({
-          apiKey: 'AIzaSyBeouPJ4-oDgniLe2BWoiBhgAoHD2CvFuA',  // Replace with your API key
+          apiKey,  // Replace with your API key
           discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest']
         }).then(() => {
           return gapi.client.drive.files.list({
